@@ -14,11 +14,11 @@ public class KWFour {
     }
 
     public static void main(String[] args) {
-        ArrayList personMeeting = new ArrayList(Arrays.asList("Arbaaz", "Ankita", "Gowthami","Nilesh","Roger","Rohit","Sangeetha","Sambasiva","Sidharth","Omprakash"));
+        ArrayList personMeeting = new ArrayList(Arrays.asList("Arbaaz", "Ankita", "Gowthami", "Nilesh", "Roger", "Rohit", "Sangeetha", "Sambasiva", "Sidharth", "Omprakash"));
         KWFour obj = new KWFour(personMeeting);
         PairingClass obj2 = new PairingClass();
         obj2.scheduleMeeting(personMeeting);
     }
-
+    //trial
 
 }
