@@ -12,7 +12,6 @@ public class KWFour {
     KWFour(ArrayList persons) {
         this.persons = persons;
     }
-
     public static void main(String[] args) {
         ArrayList personMeeting = new ArrayList(Arrays.asList("Arbaaz", "Ankita", "Gowthami", "Nilesh", "Roger", "Rohit", "Sangeetha", "Sambasiva", "Sidharth", "Omprakash"));
         KWFour obj = new KWFour(personMeeting);
