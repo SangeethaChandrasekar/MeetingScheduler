@@ -11,6 +11,7 @@ public class PairingClassTest {
     ArrayList array2 = new ArrayList(Arrays.asList(1.0, 2.25, 3.33));
     ArrayList array3 = new ArrayList(Arrays.asList());
 
+
     KWFour know4 = new KWFour(array3);
     PairingClass knowFour = new PairingClass();
 
