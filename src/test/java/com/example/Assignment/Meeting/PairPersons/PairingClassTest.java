@@ -21,20 +21,21 @@ public class PairingClassTest {
         assertEquals((knowFour.makePairing(array1)), array1);
         assertEquals((knowFour.makePairing(array2)), array2);
     }
-
+    @org.junit.Test
+    public void isEmptyTest() {
+        assertTrue(knowFour.scheduleMeeting(array3));
+    }
     @org.junit.Test
     public void scheduleMeetingTest() {
-        assertTrue(knowFour.scheduleMeeting(array));
-        assertFalse(knowFour.scheduleMeeting(array3));
+        assertFalse(knowFour.scheduleMeeting(array));
     }
-
     @org.junit.Test
     public void negativeTest() {
         assertNotEquals(knowFour.makePairing(array), array2);
         assertNotEquals(knowFour.makePairing(array), array3);
         assertNotSame(knowFour.makePairing(array1), array);
+        assertFalse(knowFour.scheduleMeeting(array));
     }
-
     @org.junit.Test
     public void makePairingTest2() {
         assertSame(knowFour.makePairing(array3), array3);
