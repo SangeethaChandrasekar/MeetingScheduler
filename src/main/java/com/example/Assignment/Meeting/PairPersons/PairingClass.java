@@ -1,6 +1,7 @@
 package com.example.Assignment.Meeting.PairPersons;
 
 import org.apache.log4j.Logger;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,13 +27,14 @@ public class PairingClass {
 
     public boolean scheduleMeeting(ArrayList fixMeeting) {
         if (isEmpty(fixMeeting)) {
-            return false;
+            log.info("===Empty===");
+            return true;
         } else if ((fixMeeting.size()) % 2 == 1) {
             fixMeeting.add("No pair to meet today");
             makePairing(fixMeeting);
         } else {
             makePairing(fixMeeting);
         }
-        return true;
+        return false;
     }
 }
