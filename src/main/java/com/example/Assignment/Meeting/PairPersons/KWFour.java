@@ -7,15 +7,14 @@ import java.util.Arrays;
 
 public class KWFour {
     static Logger log = Logger.getLogger(KWFour.class.getClass());
-    public ArrayList<Object> persons;
+    public ArrayList persons;
 
-    KWFour(ArrayList<Object> persons) {
+    KWFour(ArrayList persons) {
         this.persons = persons;
     }
 
     public static void main(String[] args) {
-        ArrayList<Object> personMeeting = new ArrayList<>(Arrays.asList("Arbaaz", "Ankita", "Gowthami", "Nilesh",
-                "Roger", "Rohit", "Sangeetha", "Sambasiva", "Sidharth", "Omprakash"));
+        ArrayList personMeeting = new ArrayList<>(Arrays.asList("Arbaaz", "Ankita", "Gowthami", "Nilesh", "Roger", "Rohit", "Sangeetha", "Sambasiva", "Sidharth", "Omprakash"));
         KWFour obj = new KWFour(personMeeting);
         PairingClass obj2 = new PairingClass();
         obj2.scheduleMeeting(personMeeting);

@@ -7,10 +7,10 @@ import java.util.Collections;
 import static org.junit.Assert.*;
 
 public class PairingClassTest {
-    ArrayList<Integer> array = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
-    ArrayList<String> array1 = new ArrayList<>(Arrays.asList("1", "2"));
-    ArrayList<Double> array2 = new ArrayList<>(Arrays.asList(1.0, 2.25, 3.33));
-    ArrayList<Object> array3 = new ArrayList<>(Collections.emptyList());
+    ArrayList array = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
+    ArrayList array1 = new ArrayList<>(Arrays.asList("1", "2"));
+    ArrayList array2 = new ArrayList<>(Arrays.asList(1.0, 2.25, 3.33));
+    ArrayList array3 = new ArrayList<>(Arrays.asList());
 
 
     KWFour know4 = new KWFour(array3);
